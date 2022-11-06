@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  
+  <script>
+    
+  function color(){
+     document.getElementById('popup').style.display = "block";
+     document.getElementById('text').style.display = "none";
+     document.body.style.backgroundColor = 'grey';
+    }
+    
+    
+    
+   function color2(){
+    document.getElementById('popup').style.display = "none";
+    document.getElementById('text').style.display = "block";
+    document.body.style.backgroundColor = 'skyblue';
+    }
+    
+    
+    
+  </script>
+  
+  
+  <body>
+    
+   
+ 
+    <div id ="popup" class= " container">
+      
+  
+      <div class="title">
+      <button onclick ="color2()" style = "float: right; border-radius: 5%; background-color:#C0C0C0; border: none"> X </button>
+      
+      
+      <h1> contact us</h1>
+      
+      
+      
+      <form  class="popup">
+      <div class='field'>
+      <i class="fa fa-user icon"></i>
+      <input placeholder= 'username..'  > </input>
+      </div>
+      
+      
+       <div class='field'>
+      <i class="fa fa-envelope icon"></i>
+      <input placeholder= 'email..' > </input>
+      </div>
+      
+      
+       <div class='field'>
+    <i class="fa fa-envelope-open-o icon" aria-hidden="true"></i>
+      <input placeholder= 'message..'  style = "padding-bottom: 50px;" ></input>
+      </div>
+      
+      
+      <button> send message </button>
+      
+      </div>
+    </form>
+    
+    </div>  
+    
+    <div id= "text">
+      <h1 style = "font-family: ariel; color: #5C6AC4;"> this page is made to test the popup </h1>
+    <div  class='click'>
+       <button onclick ="color()" > click me for popup </button>
+       </div>
+    </div>
+    
+  
+     
+  </body>
+  
+  
+  
+</html>
